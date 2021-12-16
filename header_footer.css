@@ -1,0 +1,124 @@
+header{
+    margin-top: -10px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 5;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: -10px;
+    }
+    .container{
+        margin-right: -8px;
+        width: 100.6%;
+        color: white;
+       
+    }
+    .banner_text1{
+        color:black;         
+        font-size: 20px;
+        position:absolute;
+        top: 40%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+     }
+  .banner_text2{
+        color:#62cb6b;         
+        font-size: 50pt;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        }
+
+nav a{
+    text-decoration: none;        
+    color: white;
+    padding: 25px;
+    display: inline-block;
+     }
+.footer 
+     {
+
+         margin-bottom: -10px;
+         margin-right: -8px;
+         margin-left: -10px;
+         box-sizing:border-box;
+         padding: 25px;
+         height: 300px;
+         color: #62cb6b;
+         background-color: #000000;
+         list-style: none;
+     }
+.footer li{
+         color: white;
+         margin-left: 20px;
+
+     }
+hr{
+    style=width: 70em;
+    color:#eeeeee;
+}
+input , textarea{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 370px;
+    font-size: medium;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    background-color:black;
+    color: white;
+    padding: 10px;
+}
+ button{
+    align-content: center;
+    width: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #62cb6b;    
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* @media only screen and (max-width: 992px) 
+{
+    header{
+        padding: 10px;
+    }
+   .banner_text1{
+       font-size: 10px;
+
+   }
+    .banner_text2{
+        font-size: 15px;
+
+    }
+}
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  } */
