@@ -11,11 +11,20 @@ header{
     margin-left: -10px;
     }
     .container{
-        margin-right: -8px;
-        width: 100.6%;
-        color: white;
+        margin-right: 8px;
+        /* margin-top: 200px; */
        
+        width: 100%;
+        color: black;
+               
     }
+    /* @media screenonly (min-width : 500px)and(max-width: 768px) {
+        .container img{
+            float: right;
+            margin-right: 20px;
+           }
+        } */
+   
     .banner_text1{
         color:black;         
         font-size: 20px;
@@ -31,6 +40,13 @@ header{
         top: 50%;
         left: 20%;
         transform: translate(-50%, -50%);
+        animation-name: color;
+        animation-duration: 5s;
+        }
+        @keyframes  color
+        {
+          from {color: red;}
+          to {color: yellow;}
         }
 
 nav a{
@@ -58,7 +74,7 @@ nav a{
 
      }
 hr{
-    style=width: 70em;
+    width: 70em;
     color:#eeeeee;
 }
 input , textarea{
@@ -87,38 +103,107 @@ input , textarea{
 }
 button:hover{
     cursor: pointer;
+    background-color: red;
+
+}
+@media(min-width : 500px)and(max-width: 768px) {
+    .container img{
+        float: left;
+        margin-right: 20px;
+       }
+    header nav {
+        display: none;
+    }
+	.banner_text1 {
+       
+		font-size: 20px;
+    }
+    .banner_text2 
+    {        
+		font-size: 30px;
+    }
+    .catalog {
+        transform: translateY(3%);
+        margin-top: 10px;
+        
+    }
+    .catalog table tr td{
+        display: none;
+    }
+    .house_sale_container hr h1{
+        transform: translateY(90%);
+    }
+    hr{
+        border-top:10px;
+        width: 100%;
+    }
+    .footer{
+        height: 550px;
+    }
+    .footer .contact{
+        transform: translateY(100%);
+
+    }
 }
 
-/* @media only screen and (max-width: 992px) 
-{
-    header{
-        padding: 10px;
+@media(min-width: 300px) and (max-width:600px){
+  
+    .login_container  {
+        width: 300px;
+        padding: 20px;
+    } 
+   hr{
+        transform: translateY(160%);
+        width: 150px;
     }
-   .banner_text1{
-       font-size: 10px;
-
-   }
-    .banner_text2{
-        font-size: 15px;
-
+    .container img{
+        float: left;
+        margin-right: 20px;
+       }
+    header nav {
+        display: none;
     }
-}
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    .example {background: green;}
+	.banner_text1 {
+       
+		font-size: 20px;
+    }
+    .banner_text2 
+    {        
+		font-size: 30px;
+    }
+    .login_container{
+       
+        padding: 30px;
+       border-radius: 60px;
+    }
+    .house_sale_container{
+        margin-left: -50px;
+    }
+    
+    .container .banner_text1 {
+        transform: translateY(-130px);   
+        margin-left: -60px;   
+		font-size: 20px;
+    }
+   .container .banner_text2 
+    {      
+        transform: translateY(-150px);
+        margin-left: -80px; 
+		font-size: 30px;
+        font-weight: bolder;
+    }
+    .footer{
+        height: 550px;
+        
+    }
+    .footer .contact{
+        transform: translateY(100%);
+           }
+    .login_container{
+        width: 60%;        
+        margin-top: 50px;
+    }
+    
   }
   
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    .example {background: blue;}
-  } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .example {background: orange;}
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
-  } */
+ 
