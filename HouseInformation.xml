@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet  href="HouseInformation.xsl" type="text/xsl" ?>
+<HouseSellBuy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="HouseInformation.xsd">
+   <House>
+      <id>1</id>
+      <name>Dream</name>
+      <price>20000000</price>
+      <address>#15 ,food street,kormangala</address>
+      <city>Bangalore</city>
+      <information>2BHK,1500ft</information>
+      <soldstatus>0</soldstatus>
+      <state>1</state>
+   </House>
+   <House>
+      <id>2</id>
+      <name>Divine</name>
+      <price>12000000</price>
+      <address>#15 ,food street,kormangala</address>
+      <city>Bangalore</city>
+      <information>2BHK,1000ft</information>
+      <soldstatus>1</soldstatus>
+      <state>1</state>
+   </House>
+   <House>
+      <id>3</id>
+      <name>Moon</name>
+      <price>40000000</price>
+      <address>#15 ,food street,kormangala</address>
+      <city>Bangalore</city>
+      <information>2BHK,1500ft</information>
+      <soldstatus>0</soldstatus>
+      <state>1</state>
+   </House>
+   <House>
+      <id>4</id>
+      <name>shadow</name>
+      <price>10000000</price>
+      <address>#15 ,food street,kormangala</address>
+      <city>Bangalore</city>
+      <information>2BHK,2500ft</information>
+      <soldstatus>0</soldstatus>
+      <state>1</state>
+   </House>
+   <House>
+      <id>5</id>
+      <name>Hapiness</name>
+      <price>56000000</price>
+      <address>#15 ,food street,kormangala</address>
+      <city>Bangalore</city>
+      <information>2BHK,3500ft</information>
+      <soldstatus>1</soldstatus>
+      <state>1</state>
+   </House>
+   <House>
+      <id>6</id>
+      <name>Victory</name>
+      <price>34000000</price>
+      <address>#15 ,food street,kormangala</address>
+      <city>Bangalore</city>
+      <information>2BHK,400ft</information>
+      <soldstatus>0</soldstatus>
+      <state>1</state>
+   </House>
+   <House>
+      <id>7</id>
+      <name>Happy</name>
+      <price>25000000</price>
+      <address>101 Skyline Dr,Farmington</address>
+      <city>Bangalore</city>
+      <information>2BHK,1500ft</information>
+      <soldstatus>0</soldstatus>
+      <state>0</state>
+   </House>
+   <House>
+      <id>8</id>
+      <name>Family</name>
+      <price>60000000</price>
+      <address>#15 ,food street,kormangala</address>
+      <city>Bangalore</city>
+      <information>2BHK,2500ft</information>
+      <soldstatus>0</soldstatus>
+      <state>0</state>
+   </House>
+
+   <House>
+    <id>9</id>
+    <name>Mile End</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>10</id>
+    <name>Kuredu</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>11</id>
+    <name>Lealands</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>12</id>
+    <name>Rosemary House</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>13</id>
+    <name>SandalWood</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>14</id>
+    <name>Court Lodge</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>15</id>
+    <name>Welcombe</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>16</id>
+    <name>Holmeswood</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+
+ <House>
+    <id>17</id>
+    <name>Queen Oaks</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>18</id>
+    <name>Greenhills</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>19</id>
+    <name>The Glade</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+ <House>
+    <id>20</id>
+    <name>Bell Cottage</name>
+    <price>60000000</price>
+    <address>#15 ,food street,kormangala</address>
+    <city>Bangalore</city>
+    <information>2BHK,2500ft</information>
+    <soldstatus>0</soldstatus>
+    <state>0</state>
+ </House>
+</HouseSellBuy>
