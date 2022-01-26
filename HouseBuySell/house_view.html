@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/assert/css/header_footer.css">
+    <style>
+        * body
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-sizing: border-box;
+              
+    }   
+ 
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  margin-left: 60px;
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    margin-top: 70px;
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+h3{
+    color: #62cb6b ;
+    text-align: left;
+}
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASAGRAND</title>
+   
+</head>
+<body>
+    <header>
+        <a href="Index.html"  style="padding: 25px; font-size: 20px;        
+           color: white;
+           text-decoration: none;
+           cursor: pointer;">CASA<span style="color: #62cb6b;">GRAND</span></a>         
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="Index.html">Buy House</a>
+            <a href="Index.html">Sell House</a>
+            <a href="AboutUs.html">know Us</a>
+            <a href="Login.html">SignIn/SignUp</a>
+        </nav>
+    </header>
+    
+    
+   
+
+          
+      <!-- The four columns -->
+      <!-- <div class="row">
+        <div class="column">
+          <img src="assert\image\product_01.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="assert\image\product_01.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="assert\image\product_01.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div>
+       
+      </div> -->
+
+      <div style="padding-left: 70px;padding-top: 70px;">
+        <!-- <img style="height: 400px; width: 40%;margin-left: -10px;transform: translate(10%,5%);" src="assert\image\product_01.jpg" alt="Sweet Home"> -->
+            <div class="login_container" > 
+                <iframe src="https://momento360.com/e/u/89275767a3b64cf98a4714cb170894fd?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium" alt="Snow" style="width:95%;height: 500px;" onclick="myFunction(this);">
+            </iframe></div> 
+            <div >
+                <h3>Dream</h3>
+                <h3 style="margin-left:1100px; color: red;margin-top: -45px;" >Rs.1.2Cr</h3>
+                <ul style="color: black;">
+                    <li>
+                        2 BHK Flat for sale in Anora Kala, Lucknow 
+                    </li>
+                    <li>
+                        Sky Ville Apartments ,Anora Kala, Lucknow
+                    </li>
+                    <li>
+                        Build Up Area 
+                    </li>
+                    <li>
+                        1200 sq.ft
+                    </li>
+
+                </ul>
+            </div>
+            <!-- <div style="box-sizing: border-box;background-color: black;width: 1200px;height: 500px;>
+            /* height: 500px;transform: translate(110%);"> */
+                  <p style="color:white;">
+
+                    2 BHK Flat for sale in Anora Kala, Lucknow
+                    Sky Ville Apartments ,Anora Kala, Lucknow
+                    Build Up Area
+                    1200 sq.ft
+                  </p>
+
+            </div> -->
+
+
+                         
+     </div> 
+      
+      <!-- <div class="container" style="padding: 20px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg"  style="width:50%; height: 400px; ">
+        <div id="imgtext"></div>
+      </div> -->
+      
+      <!-- <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+       -->
+    
+    <footer>
+     
+        <div class="footer">
+          
+           <h3>Contact us</h3> 
+           <li style="color: #62cb6b;">BANGALORE</li><br>
+           <li>No. 34/1, 4th Floor Salma Bizhouse</li>
+           <li>Meanee Avenue Road, Opp to Lakeside Hospital, Ulsoor Road, Near Ulsoor lake</li>
+           <li>Bangalore-560042
+           <li>Phone : +91-98848 00062 </li>         
+           <li>Email :  info@casagrand.com</li>
+           <div class="contact" style="float: right; margin-top: -180px;margin-right: 60px;">
+            <input type="text" id="Name" name="name"  placeholder="Name"><br><br>
+            <input type="email" id="Email" name="email" size="60" placeholder="Email"><br><br>
+            <textarea rows="2" cols="50" name="text" placeholder="Your Query"></textarea><br><br>
+            <button title="Submit">Send</button>
+           </div>  
+
+        </div>
+      
+    </footer>
+    
+    
+</body>
+</html>

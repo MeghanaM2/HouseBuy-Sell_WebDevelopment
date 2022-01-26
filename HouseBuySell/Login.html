@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="\assert\css\header_footer.css">
+            
+    <style >  
+   * body
+    {
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-sizing: border-box;        
+    } 
+    .login_container  
+    {        
+        margin-top: 50px;             
+        position:absolute;
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.9;
+        box-sizing: content-box; 
+        min-height: 550px;
+        height: auto;
+        width: 500px;
+        padding:0px;
+        background-color:black;
+    }
+    .login_box{
+        padding-top: 60px;
+        color:white;         
+        font-size: 20px;
+        position:absolute;
+        top: 40%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+
+/* input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  color: white;
+  /* border: none; */
+  background: black;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color:black;
+  outline: none;
+} */
+  
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASAGRAND</title>
+</head>
+<body>
+    <header>
+        <a href="Index.html"  style="padding: 25px; font-size: 20px;        
+           color: white;
+           text-decoration: none;
+           cursor: pointer;">TEAM<span style="color: #62cb6b;">FIVE</span></a>         
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="Index.html">Buy House</a>
+            <a href="Index.html">Sell House</a>
+            <a href="AboutUs.html">know Us</a>
+            <a href="Login.html">SignIn/SignUp</a>
+        </nav>
+    </header>
+   <section> 
+    <div>
+       <img style="height: 670px; width: 1350px;margin-left: -10px;filter: grayscale(100%);" src="assert\image\login.jpg" alt="Sweet Home">
+          
+          <div class="login_container" > 
+             <div class="login_box" style="box-sizing: border-box;margin-left: 30%;"> 
+                <div id="login">
+                    <label style="color: white;margin-left:43%;">SignIn</label>
+                    <br><br><br><br>
+                    <input type="email" id="useremail"  placeholder="Email" required><br><br><br>
+                    <input type="password" id="psw"  placeholder="Password" required><valid style="font-size: 15px;"></valid><br><br><br>
+                    
+                    <button style="margin-left:35%" title="Submit" >SignUp</button><br><br>
+                    <a href="SignUp.html" style="margin-left:30%;color: #62cb6b;text-decoration: none;font-size: 15px;">New User ? get account!</a>
+                    <!-- <button style="margin-left:35%;color: #62cb6b;background-color: transparent;" onclick="signuppage()" >New User ? get account!</button> -->
+                </div>   
+                <!-- <div id="signup" style="display: none;">
+                <form  action=""><br><br><br>
+                <label style="color: white;margin-left:43%;">SignUp</label>
+                <br><br>    
+                
+                <input type="text" id="name" placeholder="Name" required><br><br>
+
+                <input type="email" id="useremail"  placeholder="Email" required><br><br>
+
+                <input type="number" maxlength="10" id="phone"  placeholder="Phone Number" required><br><br>
+               
+                <input type="number" id="adhaar" placeholder="Aadhaar Number" required><br><br>
+
+                <input type="text" id="psw"  placeholder="Password" required><valid style="font-size: 15px;display: block;"></valid><br><br><br>
+
+                <button style="margin-left:35%" title="Submit" >SignUp</button>
+               </form>
+            </div> -->
+             </div>    
+           </div> 
+                        
+    </div></section>
+         <footer>     
+            <div class="footer">              
+               <h3>Contact us</h3> 
+               <li style="color: #62cb6b;">BANGALORE</li><br>
+               <li>No. 34/1, 4th Floor Salma Bizhouse</li>
+               <li>Meanee Avenue Road, Opp to Lakeside Hospital, Ulsoor Road, Near Ulsoor lake</li>
+               <li>Bangalore-560042
+               <li>Phone : +91-98848 00062 </li>         
+               <li>Email :  info@casagrand.com</li>
+               <div class="contact" style="float: right; margin-top: -180px;margin-right: 60px;">
+                <form action="">
+                <input type="text" id="Name"   placeholder="Name"><br><br>
+                <input type="email" id="Email"  size="60" placeholder="Email" required><br><br>
+                <textarea rows="2" cols="50" name="text" placeholder="Your Query" required></textarea><br><br>
+                <button title="Submit">Send</button>
+            </form>
+               </div>      
+            </div>          
+        </footer>
+    
+</body>
+
+
+</html>
+
+<script>
+    var mname=document.getElementById('name');
+    var memail=document.getElementById('useremail');
+    var number=document.getElementById('phone');
+    var adhar=document.getElementById('adhaar');
+    var mpassword=document.getElementById('psw');
+    var pvalid=document.getElementsByTagName('valid');
+
+    var QEmail=document.getElementById('Email');
+
+    QEmail.onkeydown=function()
+    {
+       const validemail=/^([a-z0-9\.-]+)@([a-z0-9]+)\.([a-z]{1,3})$/;
+      
+       if(validemail.test(QEmail.value))
+       {
+        QEmail.style.border="solid 1px white"; 
+       }
+       else{
+        QEmail.style.border="solid 2px red";
+       }
+    }
+
+   function signuppage(){
+        var logindiv=document.getElementById('login');
+        var signupdiv=document.getElementById('signup');
+        logindiv.style.display="none";
+        signupdiv.style.display="block";
+
+    }
+    
+    mname.onkeydown=function(){
+        const nameregex=/^([a-zA-z]{5,12})$/;
+        if(nameregex.test(mname.value))
+       {
+        mname.style.border="solid 1px white";
+       }
+       else{
+        mname.style.border="solid 2px red";
+       }
+    }
+    memail.onkeydown=function()
+    {
+       const validemail=/^([a-z0-9\.-]+)@([a-z0-9]+)\.([a-z]{1,3})$/;
+      
+       if(validemail.test(memail.value))
+       {
+        memail.style.border="solid 1px white"; 
+       }
+       else{
+        memail.style.border="solid 2px red";
+       }
+    }
+    number.onkeydown=function()
+    {
+       const validphone=/^[0-9]{9}$/;
+      
+       if(validphone.test(number.value))
+       {
+        number.style.border="solid 1px white"; 
+       }
+       else{
+        number.style.border="solid 2px red";
+       }
+    }
+    adhar.onkeydown=function(){
+        const validaadhaar=/^([2-9]{3})([0-9]{4,4})([0-9]{4})$/;
+        if(validaadhaar.test(adhar.value))
+       {
+        adhar.style.border="solid 1px white"; 
+       }
+       else{
+        adhar.style.border="solid 2px red";
+       }
+    }
+    mpassword.onkeyup=function(){
+        const validpsw=/^(?=.*\d)(?=.*[a-z])(?=.*[@$!%*?&])(?=.*[A-Z]).{8,}$/;
+        if(validpsw.test(mpassword.value))
+       {
+        // pvalid[0].style.display="none"; 
+        // mpassword.style.border="solid 1px white"; 
+       }
+       else{
+        mpassword.style.border="solid 2px red";
+        var upperCaseLetters = /[A-Z]/g;
+        if(mpassword.value.match(upperCaseLetters)) {
+            // pvalid[0].style.display="none";  
+          
+        } else {
+            pvalid[0].innerText="Aleast 1 UpperCase";
+            pvalid[0].style.color="red";
+           
+        }
+
+        var lowerCaseLetters = /[a-z]/g;
+        if(mpassword.value.match(lowerCaseLetters)) {
+            // pvalid[0].style.display="none";  
+          
+        } else {
+            pvalid[0].innerText="Aleast 1 lowerCase";
+            pvalid[0].style.color="red";
+           
+        }
+        
+
+        var numbers = /[0-9]/g;
+        if(mpassword.value.match(numbers)) {  
+            // pvalid[0].style.display="none";
+        } else {
+            pvalid[0].innerText="Aleast 1 Digit";
+            pvalid[0].style.color="red";
+        }
+
+        var numbers = /[@$!%*?&]/g;
+        if(mpassword.value.match(numbers)) {  
+            // pvalid[0].style.display="none";
+        } else {
+            pvalid[0].innerText="Aleast 1 Special character";
+            pvalid[0].style.color="red";
+        }
+        
+        
+        if(mpassword.value.length>=8) {  
+            // pvalid[0].style.display="none";
+        } else {
+            pvalid[0].innerText="Minimum 8 characters";
+            pvalid[0].style.color="red";
+        }
+
+       }
+    }
+
+        
+</script>
+

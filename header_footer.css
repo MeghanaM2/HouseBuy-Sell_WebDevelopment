@@ -18,13 +18,7 @@ header{
         color: black;
                
     }
-    /* @media screenonly (min-width : 500px)and(max-width: 768px) {
-        .container img{
-            float: right;
-            margin-right: 20px;
-           }
-        } */
-   
+     
     .banner_text1{
         color:black;         
         font-size: 20px;
@@ -41,12 +35,12 @@ header{
         left: 20%;
         transform: translate(-50%, -50%);
         animation-name: color;
-        animation-duration: 5s;
+        animation-duration: 4s;
         }
         @keyframes  color
         {
-          from {color: red;}
-          to {color: yellow;}
+          from {color: red;color: yellow;}
+          to {color: yellow;color: red;}
         }
 
 nav a{
@@ -107,6 +101,9 @@ button:hover{
 
 }
 @media(min-width : 500px)and(max-width: 768px) {
+    .navi{
+        display: none;
+    }
     .container img{
         float: left;
         margin-right: 20px;
@@ -148,6 +145,9 @@ button:hover{
 
 @media(min-width: 300px) and (max-width:600px){
   
+    .navi{
+        display: none;
+    }
     .login_container  {
         width: 300px;
         padding: 20px;
